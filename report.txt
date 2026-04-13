@@ -1,0 +1,9 @@
+For this assignment, I created a network visualization of the Les Miserables character co-occurrence graph using Gephi. I first imported the GML file as an undirected graph and applied the ForceAtlas 2 layout to reveal the overall structure of the character relationships.
+
+One of the first challenges I encountered was that the graph initially appeared too compressed and cluttered, making it difficult to distinguish communities or read labels. To improve this, I adjusted the ForceAtlas 2 scaling parameter several times and reran the layout until the graph became more spread out and readable.
+
+After improving the layout, I ran modularity analysis to detect communities in the graph. The analysis identified six communities, and I used the modularity classes to color the nodes by community. I then resized nodes by degree so that more connected and central characters appeared larger, which made major characters such as Valjean, Gavroche, Fantine, and Marius more prominent in the final visualization.
+
+Another major challenge was label readability. When labels were first enabled, the center of the graph became overcrowded. I improved this by refining the layout further, increasing spacing between clusters, adjusting label size, turning off proportional label scaling in Preview, and removing edge arrows to reduce clutter. These changes made the visualization significantly clearer while preserving the network structure.
+
+Finally, I exported the graph as a static PDF for submission and also created an interactive Sigma.js version so the network can be explored online. The static visualization highlights the community structure and central characters, while the interactive version allows the viewer to inspect clusters and connections in more detail.
